@@ -9,7 +9,6 @@
 <?php get_header(); ?>
 <div class="text-container">
     <div class="testimonials">
-    <br>
     <h1>Testimonials</h1>
     <br>
     <h4>Dear Bill and Karen</h4>

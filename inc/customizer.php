@@ -47,6 +47,21 @@ function pistoncranky_customize_register($wp_customize){
         )
     );
 
+    //Meet the team
+
+    $wp_customize->add_section('pistoncranky_team_section',
+        array(
+            'title' =>__('Meet the team'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('pistoncranky_team_text', array());
+    $wp_customize->add_control('pistoncranky_team_text_ctrl', array(
+            'type' => 'textarea',
+            'section' => 'pistoncranky_team_section',
+            'label' => __('Meet The Team Text'),
+            'settings' => 'pistoncranky_team_text'
+        )
+    );
     //----------------Products----------------//
 }
 

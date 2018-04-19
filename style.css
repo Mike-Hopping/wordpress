@@ -86,7 +86,7 @@ a{
  font-family: "Trebuchet MS";
  font-size: 2em;
  text-align: center;
- padding-top: 40px;
+ padding-top: 20px;
  margin: 0;
 }
 .main-content p{
@@ -317,7 +317,7 @@ a{
  margin-top: 50px;
 }
 .about-custom{
- padding-top: 50px;
+ /*padding-top: 50px;*/
  padding-bottom: 50px;
 }
 .about-text{
@@ -353,5 +353,8 @@ form{
  padding-top: 20px;
 }
 .woocommerce-noreviews{
+ padding-bottom: 50px;
+}
+.team-text h1{
  padding-bottom: 50px;
 }
