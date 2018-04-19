@@ -1,0 +1,23 @@
+.woocommerce .woocommerce-breadcrumb{
+    color: #fff;
+}
+.woocommerce .woocommerce-breadcrumb a{
+    color: #fff;
+}
+.woocommerce img,
+.woocommerce-page img{
+    height: 150px;
+    width: 250px;
+}
+.woocommerce-products-header{
+    background-color: green;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+    color: #000;
+    text-shadow: inherit;
+}
+.woocommerce div.product form.cart .button {
+    vertical-align: middle;
+    float: left;
+    margin-left: 20px;
+}
