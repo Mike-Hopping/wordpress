@@ -101,16 +101,24 @@ a{
 .main-images{
  display: flex;
  flex-direction: row;
+ width: 900px;
+ padding-left: 120px;
  /*margin-top: 50px;*/
 }
 .image1{
  height: 230px;
  width: 370px;
  align-content: center;
- background-image: url("assets/piston-cranky-wof.jpg");
- background-repeat: no-repeat;
+ /*background-image: url("assets/piston-cranky-wof.jpg");*/
+ /*background-repeat: no-repeat;*/
  background-position: center;
+ margin: 0 auto;
  flex: 1
+}
+.home-img1{
+ align-content: center;
+ background-position: center;
+ margin: 0 auto;
 }
 .image2{
  height: 230px;
@@ -209,6 +217,10 @@ a{
 }
 .product-item{
  width: 400px;
+ height: 150px;
+}
+.product-item img{
+ width: 250px;
  height: 150px;
 }
 .services-container{
@@ -330,10 +342,6 @@ a{
 .about-img{
  height: 230px;
  width: 370px;
- /*align-content: center;*/
- /*background-image: url("assets/piston-cranky.jpg");*/
- /*background-repeat: no-repeat;*/
- /*background-position: center;*/
 }
 .shopping-cart{
  padding-top: 30px;

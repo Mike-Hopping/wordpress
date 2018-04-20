@@ -4,12 +4,6 @@
 .woocommerce .woocommerce-breadcrumb a{
     color: #fff;
 }
-.woocommerce img,
-.woocommerce-page img
-.product-item{
-    height: 150px;
-    width: 250px;
-}
 .woocommerce-products-header{
     background-color: green;
 }
@@ -21,9 +15,4 @@
     vertical-align: middle;
     float: left;
     margin-left: 20px;
-}
-/*.woocommerce img, .woocommerce-page*/
-.about-img img {
-    height: auto!important;
-    max-width: 100%!important;
 }

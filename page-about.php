@@ -8,7 +8,7 @@
 ?>
 <?php get_header();
 $about_text = get_theme_mod('pistoncranky_about_text');
-$about_image = get_theme_mod('pistoncranky_about_image')
+$about_image = get_theme_mod('pistoncranky_about_image');
 ?>
 <div class="text-container">
     <div class="about-custom">

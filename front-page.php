@@ -6,17 +6,27 @@
  * Time: 1:35 PM
  */
 ?>
-<?php get_header(); ?>
+<?php get_header();
+$home_statement_text = get_theme_mod('pistoncranky_home_statement_text');
+$home_image = get_theme_mod('pistoncranky_home_statement_image')
+?>
 <section>
     <div class="main-content">
         <div class="content-container">
+            <div class="home-statement">
             <h2>Welcome to Piston Cranky Motors - The PC Automotive Company</h2>
-            <p>
-                Welcome to Piston Cranky Motors Ltd, where we deliver what we say we will…whether it's a Warrant of Fitness (WOF), puncture repair, an engine overhaul or just a cup of tea and a chat!
-                So you need something mechanical done? At Piston Cranky Motors Ltd, WE CAN DO IT!
-            </p>
+                <?php if($home_statement_text || is_customize_preview()):
+                    echo wpautop($home_statement_text);
+                endif; ?>
+<!--            <p>-->
+<!--                Welcome to Piston Cranky Motors Ltd, where we deliver what we say we will…whether it's a Warrant of Fitness (WOF), puncture repair, an engine overhaul or just a cup of tea and a chat!-->
+<!--                So you need something mechanical done? At Piston Cranky Motors Ltd, WE CAN DO IT!-->
+<!--            </p>-->
+            </div>
             <div class="main-images">
-                <div class="image1"></div>
+                <div class="image1">
+                    <img class="home-img1" src="<?php echo $home_image ?>">
+                </div>
                 <div class="image2"></div>
             </div>
             <div class="promotional">

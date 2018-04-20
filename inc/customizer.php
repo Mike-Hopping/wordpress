@@ -94,6 +94,40 @@ function pistoncranky_customize_register($wp_customize){
             'settings' => 'pistoncranky_contact_text'
         )
     );
+
+    //Home
+
+    $wp_customize->add_section('pistoncranky_home_statement_section',
+        array(
+            'title' =>__('Home Statement'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('pistoncranky_home_statement_text', array());
+    $wp_customize->add_control('pistoncranky_home_statement_text_ctrl', array(
+            'type' => 'textarea',
+            'section' => 'pistoncranky_home_statement_section',
+            'label' => __('Home Mission Statement Text'),
+            'settings' => 'pistoncranky_home_statement_text'
+        )
+    );
+
+    //Home Image 1
+
+    $wp_customize->add_section('pistoncranky_home_statement_image_section',
+        array(
+            'title' =>__('Home Statement Images'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('pistoncranky_home_statement_image', array());
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'pistoncranky_home_statement_image_ctrl',
+        array(
+            'section' => 'pistoncranky_home_statement_image_section',
+            'label' => __('Home Image 1'),
+            'settings' => 'pistoncranky_home_statement_image'
+        )
+    ));
     //----------------Products----------------//
 }
 

@@ -15,7 +15,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="woocommerce"<?php body_class(); ?>>
+<!--<body class="woocommerce"--><?php //body_class(); ?><!-->-->
+<body class=""<?php body_class(); ?>>
     <header>
         <div class="nav-wrapper">
             <div class="nav-menu">
