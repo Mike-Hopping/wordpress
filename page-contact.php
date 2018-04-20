@@ -6,7 +6,9 @@
  * Time: 1:35 PM
  */
 ?>
-<?php get_header(); ?>
+<?php get_header();
+$contact_text = get_theme_mod('pistoncranky_contact_text');
+?>
 <div class="text-container">
     <div class="contact-container">
     <div id="map-container">Map goes here</div>
@@ -21,23 +23,28 @@
             }
         </script>
     <div class="contact-info">
+        <div class="contact-text">
     <h1>Contact Us</h1>
-        <br>
-    <h2>Piston Cranky Motors</h2>
-        <p>
-            Address:	961 Colombo Street<br>
-            Christchurch<br>
-            New Zealand<br>
-            <br>
-            Postal Address:	P.O. Box 21447<br>
-            Edgeware<br>
-            Christchurch 8143<br>
-            New Zealand<br>
-            <br>
-            Phone:	03 385 8890<br>
-            Fax:	03 385 8413<br>
-            <br>
-            Email:	info@pistoncranky.co.nz</p>
+            <?php if($contact_text || is_customize_preview()):
+                echo wpautop($contact_text);
+            endif; ?>
+<!--        <br>-->
+<!--    <h2>Piston Cranky Motors</h2>-->
+<!--        <p>-->
+<!--            Address:	961 Colombo Street<br>-->
+<!--            Christchurch<br>-->
+<!--            New Zealand<br>-->
+<!--            <br>-->
+<!--            Postal Address:	P.O. Box 21447<br>-->
+<!--            Edgeware<br>-->
+<!--            Christchurch 8143<br>-->
+<!--            New Zealand<br>-->
+<!--            <br>-->
+<!--            Phone:	03 385 8890<br>-->
+<!--            Fax:	03 385 8413<br>-->
+<!--            <br>-->
+<!--            Email:	info@pistoncranky.co.nz</p>-->
+        </div>
         <a href=""><strong>Please click here to enquire</strong></a>
     </div>
     </div>

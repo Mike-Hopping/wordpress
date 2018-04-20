@@ -330,10 +330,10 @@ a{
 .about-img{
  height: 230px;
  width: 370px;
- align-content: center;
- background-image: url("assets/piston-cranky.jpg");
- background-repeat: no-repeat;
- background-position: center;
+ /*align-content: center;*/
+ /*background-image: url("assets/piston-cranky.jpg");*/
+ /*background-repeat: no-repeat;*/
+ /*background-position: center;*/
 }
 .shopping-cart{
  padding-top: 30px;

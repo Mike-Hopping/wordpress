@@ -62,6 +62,38 @@ function pistoncranky_customize_register($wp_customize){
             'settings' => 'pistoncranky_team_text'
         )
     );
+
+    //Testimonials
+
+    $wp_customize->add_section('pistoncranky_testimonials_section',
+        array(
+            'title' =>__('Testimonials'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('pistoncranky_testimonials_text', array());
+    $wp_customize->add_control('pistoncranky_testimonials_text_ctrl', array(
+            'type' => 'textarea',
+            'section' => 'pistoncranky_testimonials_section',
+            'label' => __('Testimonials Text'),
+            'settings' => 'pistoncranky_testimonials_text'
+        )
+    );
+
+    //Contact
+
+    $wp_customize->add_section('pistoncranky_contact_section',
+        array(
+            'title' =>__('Contact'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('pistoncranky_contact_text', array());
+    $wp_customize->add_control('pistoncranky_contact_text_ctrl', array(
+            'type' => 'textarea',
+            'section' => 'pistoncranky_contact_section',
+            'label' => __('Contact Text'),
+            'settings' => 'pistoncranky_contact_text'
+        )
+    );
     //----------------Products----------------//
 }
 

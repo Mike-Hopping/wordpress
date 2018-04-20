@@ -8,6 +8,7 @@
 ?>
 <?php get_header();
 $about_text = get_theme_mod('pistoncranky_about_text');
+$about_image = get_theme_mod('pistoncranky_about_image')
 ?>
 <div class="text-container">
     <div class="about-custom">
@@ -17,7 +18,9 @@ $about_text = get_theme_mod('pistoncranky_about_text');
         echo wpautop($about_text);
         endif; ?>
     </div>
-    <div class="about-img"></div>
+<!--    <div class="about-img">-->
+        <img class="about-img" src="<?php echo $about_image ?>">
+<!--    </div>-->
     </div>
 </div>
 <?php get_footer(); ?>
