@@ -8,7 +8,8 @@
 ?>
 <?php get_header();
 $home_statement_text = get_theme_mod('pistoncranky_home_statement_text');
-$home_image = get_theme_mod('pistoncranky_home_statement_image')
+$home_image_one = get_theme_mod('pistoncranky_home_statement_image_one');
+$home_image_two = get_theme_mod('pistoncranky_home_statement_image_two')
 ?>
 <section>
     <div class="main-content">
@@ -25,9 +26,11 @@ $home_image = get_theme_mod('pistoncranky_home_statement_image')
             </div>
             <div class="main-images">
                 <div class="image1">
-                    <img class="home-img1" src="<?php echo $home_image ?>">
+                    <img class="home-img1" src="<?php echo $home_image_one ?>">
                 </div>
-                <div class="image2"></div>
+                <div class="image2">
+                    <img class="home-img2" src="<?php echo $home_image_two ?>">
+                </div>
             </div>
             <div class="promotional">
                 <div class="promo-img1"></div>

@@ -113,19 +113,37 @@ function pistoncranky_customize_register($wp_customize){
 
     //Home Image 1
 
-    $wp_customize->add_section('pistoncranky_home_statement_image_section',
+    $wp_customize->add_section('pistoncranky_home_statement_image_one_section',
         array(
-            'title' =>__('Home Statement Images'),
+            'title' =>__('Home Statement Image 1'),
             'priority' => 30
         ));
-    $wp_customize->add_setting('pistoncranky_home_statement_image', array());
+    $wp_customize->add_setting('pistoncranky_home_statement_image_one', array());
     $wp_customize->add_control(new WP_Customize_Image_Control(
         $wp_customize,
-        'pistoncranky_home_statement_image_ctrl',
+        'pistoncranky_home_statement_image_one_ctrl',
         array(
-            'section' => 'pistoncranky_home_statement_image_section',
+            'section' => 'pistoncranky_home_statement_image_one_section',
             'label' => __('Home Image 1'),
-            'settings' => 'pistoncranky_home_statement_image'
+            'settings' => 'pistoncranky_home_statement_image_one'
+        ),
+
+        //Home Image 2
+
+        $wp_customize->add_section('pistoncranky_home_statement_image_two_section',
+            array(
+                'title' =>__('Home Statement Image 2'),
+                'priority' => 30
+            ),
+        $wp_customize->add_setting('pistoncranky_home_statement_image_two', array()),
+        $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'pistoncranky_home_statement_image_two_ctrl',
+        array(
+            'section' => 'pistoncranky_home_statement_image_two_section',
+            'label' => __('Home Image 2'),
+            'settings' => 'pistoncranky_home_statement_image_two'
+        )))
         )
     ));
     //----------------Products----------------//

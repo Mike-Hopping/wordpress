@@ -123,9 +123,10 @@ a{
 .image2{
  height: 230px;
  width: 370px;
+ padding-left: 100px;
  align-content: center;
- background-image: url("assets/piston-cranky-wof2.jpg");
- background-repeat: no-repeat;
+ /*background-image: url("assets/piston-cranky-wof2.jpg");*/
+ /*background-repeat: no-repeat;*/
  background-position: center;
  flex: 1
 }
